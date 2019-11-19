@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "ProcessBlobs",
 	"properties": {
 		"activities": [
 			{
@@ -27,10 +27,20 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "ProcessForEach_entry",
 				"type": "ForEach",
-				"dependsOn": [],
-				"userProperties": []
+				"dependsOn": [
+					{
+						"activity": "Lookup_For_ProcessableBlob",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
+				}
 			}
 		],
 		"annotations": []
