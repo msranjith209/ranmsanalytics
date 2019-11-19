@@ -25,22 +25,6 @@
 					},
 					"firstRowOnly": false
 				}
-			},
-			{
-				"name": "ProcessForEach_entry",
-				"type": "ForEach",
-				"dependsOn": [
-					{
-						"activity": "Lookup_For_ProcessableBlob",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"isSequential": true
-				}
 			}
 		],
 		"annotations": []
