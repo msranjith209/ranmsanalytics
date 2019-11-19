@@ -1,0 +1,10 @@
+{
+	"name": "ranmsKVConnection",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://ranmsKV.vault.azure.net/"
+		}
+	}
+}
