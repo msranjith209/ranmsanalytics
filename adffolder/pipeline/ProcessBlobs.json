@@ -25,6 +25,19 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForEach_ProcessBloBFile",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Lookup_For_ProcessableBlob",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": []
 			}
 		],
 		"annotations": []
