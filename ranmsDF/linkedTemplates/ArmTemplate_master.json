@@ -7,13 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ranmsDF"
 		},
-		"ranmsSQLDB_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ranmsSQLDB'"
-		},
 		"ranmsBlobStorage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ranmsBlobStorage'"
+		},
+		"ranmsEDWConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ranmsEDWConnection'"
+		},
+		"ranmsSQLDB_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ranmsSQLDB'"
 		},
 		"ranmsKVConnection_properties_typeProperties_baseUrl": {
 			"type": "string",
@@ -48,6 +52,9 @@
 					},
 					"ranmsBlobStorage_connectionString": {
 						"value": "[parameters('ranmsBlobStorage_connectionString')]"
+					},
+					"ranmsEDWConnection_connectionString": {
+						"value": "[parameters('ranmsEDWConnection_connectionString')]"
 					},
 					"ranmsSQLDB_connectionString": {
 						"value": "[parameters('ranmsSQLDB_connectionString')]"

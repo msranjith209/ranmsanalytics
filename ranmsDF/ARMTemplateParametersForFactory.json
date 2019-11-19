@@ -5,10 +5,13 @@
 		"factoryName": {
 			"value": "ranmsDF"
 		},
-		"ranmsSQLDB_connectionString": {
+		"ranmsBlobStorage_connectionString": {
 			"value": ""
 		},
-		"ranmsBlobStorage_connectionString": {
+		"ranmsEDWConnection_connectionString": {
+			"value": ""
+		},
+		"ranmsSQLDB_connectionString": {
 			"value": ""
 		},
 		"ranmsKVConnection_properties_typeProperties_baseUrl": {
