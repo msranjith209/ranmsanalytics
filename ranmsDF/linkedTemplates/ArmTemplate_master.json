@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ranmsDF"
 		},
+		"ranmsSQLDB_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ranmsSQLDB'"
+		},
+		"ranmsBlobStorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ranmsBlobStorage'"
+		},
 		"ranmsKVConnection_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://ranmsKV.vault.azure.net/"
@@ -37,6 +45,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"ranmsBlobStorage_connectionString": {
+						"value": "[parameters('ranmsBlobStorage_connectionString')]"
+					},
+					"ranmsSQLDB_connectionString": {
+						"value": "[parameters('ranmsSQLDB_connectionString')]"
 					},
 					"ranmsKVConnection_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ranmsKVConnection_properties_typeProperties_baseUrl')]"

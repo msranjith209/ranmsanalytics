@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "ranmsDF"
 		},
+		"ranmsSQLDB_connectionString": {
+			"value": ""
+		},
+		"ranmsBlobStorage_connectionString": {
+			"value": ""
+		},
 		"ranmsKVConnection_properties_typeProperties_baseUrl": {
 			"value": "https://ranmsKV.vault.azure.net/"
 		},
